@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "176167278536",
+    "firebase_url": "https://db-qlqa-default-rtdb.firebaseio.com",
+    "project_id": "db-qlqa",
+    "storage_bucket": "db-qlqa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176167278536:android:9245c6a423e6e5a14112fd",
+        "android_client_info": {
+          "package_name": "com.example.quanlybanaoquan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176167278536-3lqbbh0n119k70p6abethsgv54pg0ggs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA46JBILnNK9fnxLi2CrlQJ2IyDx7Xsjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176167278536-3lqbbh0n119k70p6abethsgv54pg0ggs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176167278536:android:72e8483afb648d7a4112fd",
+        "android_client_info": {
+          "package_name": "com.example.quanlyquanao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176167278536-3lqbbh0n119k70p6abethsgv54pg0ggs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA46JBILnNK9fnxLi2CrlQJ2IyDx7Xsjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176167278536-3lqbbh0n119k70p6abethsgv54pg0ggs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

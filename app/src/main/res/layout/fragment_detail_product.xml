@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.DetailProductFragment"
+    android:background = "#8BD5BE">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="0dp">
+
+         <RelativeLayout
+             android:background ="#8BD5BE"
+             android:id ="@+id/relativelayout_img_productdetail"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             >
+
+            <ImageView
+                android:id="@+id/img_detail_product_photo"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/aothun">
+            </ImageView>
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_below="@+id/relativelayout_img_productdetail"
+             android:layout_width = "match_parent"
+             android:layout_height = "500dp"
+             android:background = "@drawable/rounded_edge"
+             android:padding = "20dp">
+            <TextView
+                android:id="@+id/tv_detail_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ao thun"
+                android:textColor="@color/text_color"
+                android:textSize="30sp"
+                android:fontFamily = "sans-serif-condensed-medium">
+            </TextView>
+            <TextView
+                android:id="@+id/tv_detail_product_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_detail_product_name"
+                android:layout_marginLeft="0dp"
+                android:text="400.000 Đ"
+                android:textSize="20sp"
+                android:textColor="@color/red">
+            </TextView>
+            <Button
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/btn_detail_product_buy"
+                android:layout_width="400dp"
+                android:layout_height= "50dp"
+                android:layout_below="@id/tv_detail_product_description"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/button_corner"
+                android:backgroundTint="@null"
+                android:text="+ thêm vào giỏ hàng"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:backgroundTint="@null">
+            </Button>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tv_detail_product_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop = "10dp"
+                android:text="Mô tả"
+                android:layout_below="@+id/tv_detail_product_price"
+                android:textSize="15dp">
+            </TextView>
+
+            <TextView
+                android:fontFamily = "sans-serif-light"
+                android:id="@+id/tv_detail_product_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_detail_product_3"
+                android:layout_marginTop = "5dp"
+                android:layout_marginBottom="30dp"
+                android:text="Quần áo phục vụ nhiều mục đích như: bảo vệ khỏi thời tiết, bề mặt thô ráp, đá sắc nhọn, thực vật gây ửng mẩn, côn trùng cắn, bằng cách tạo nên một rào cản giữa da và môi trường."
+                android:textSize="18dp">
+            </TextView>
+         </RelativeLayout>
+      </RelativeLayout>
+   </ScrollView>
+</FrameLayout>

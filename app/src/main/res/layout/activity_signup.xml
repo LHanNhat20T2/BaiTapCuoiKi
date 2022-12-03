@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignUpActivity">
+
+  <TextView
+      android:id="@+id/Title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="240dp"
+      android:text="Sign Up"
+      android:textColor="#113F9C"
+      android:textSize="48sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.114"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/inputusername"
+      android:layout_width="330dp"
+      android:layout_height="70dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginTop="20dp"
+      app:boxBackgroundColor="#FFFFFF"
+      app:boxStrokeWidth="1dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/Title">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/usernameSU"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="User name"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/inputpassSU"
+      android:layout_width="330dp"
+      android:layout_height="70dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginTop="20dp"
+      app:boxBackgroundColor="#FFFFFF"
+      app:boxStrokeWidth="1dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/inputusername">
+
+    <EditText
+        android:id="@+id/passwordSU"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/inputname"
+      android:layout_width="330dp"
+      android:layout_height="70dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginTop="20dp"
+      app:boxBackgroundColor="#FFFFFF"
+      app:boxStrokeWidth="1dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/inputpassSU">
+
+    <EditText
+        android:id="@+id/confirmPasswordSU"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+
+  <Button
+      android:id="@+id/buttonLogin"
+      android:layout_width="71dp"
+      android:layout_height="48dp"
+      android:layout_marginTop="14dp"
+      android:layout_marginBottom="16dp"
+      android:background="#00FFFFFF"
+      android:backgroundTint="#FFFFFF"
+      android:insetLeft="0dp"
+      android:insetTop="0dp"
+      android:insetRight="0dp"
+      android:insetBottom="0dp"
+      android:paddingStart="0dp"
+      android:paddingLeft="0dp"
+      android:paddingTop="4dp"
+      android:paddingEnd="0dp"
+      android:paddingRight="16dp"
+      android:paddingBottom="4dp"
+      android:text="Login"
+      android:textColor="#0B6ED8"
+      android:textColorHint="#000000"
+      app:cornerRadius="0dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/textView"
+      app:layout_constraintTop_toBottomOf="@+id/buttonSignUp"
+      app:rippleColor="#FFFFFF"
+      app:strokeWidth="0dp" />
+
+  <Button
+      android:id="@+id/buttonSignUp"
+      android:layout_width="315dp"
+      android:layout_height="62dp"
+      android:layout_marginTop="36dp"
+      android:backgroundTint="#227BC1"
+      android:text="Register"
+      app:cornerRadius="15dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.635"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/inputname" />
+
+  <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="408dp"
+      android:layout_height="238dp"
+      app:layout_constraintBottom_toTopOf="@+id/Title"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:srcCompat="@drawable/signup" />
+
+  <ImageView
+      android:id="@+id/imageView7"
+      android:layout_width="25dp"
+      android:layout_height="25dp"
+      android:layout_marginTop="60dp"
+      app:layout_constraintEnd_toStartOf="@+id/inputpassSU"
+      app:layout_constraintHorizontal_bias="0.555"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView10"
+      app:srcCompat="@drawable/signup_pass" />
+
+  <ImageView
+      android:id="@+id/imageView10"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="48dp"
+      app:layout_constraintEnd_toStartOf="@+id/inputusername"
+      app:layout_constraintHorizontal_bias="0.555"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/Title"
+      app:srcCompat="@drawable/signup_acong" />
+
+
+  <ImageView
+      android:id="@+id/imageView8"
+      android:layout_width="25dp"
+      android:layout_height="25dp"
+      android:layout_marginTop="64dp"
+      app:layout_constraintEnd_toStartOf="@+id/inputname"
+      app:layout_constraintHorizontal_bias="0.555"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView7"
+      app:srcCompat="@drawable/signup_pass" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="116dp"
+      android:layout_height="15dp"
+      android:layout_marginStart="100dp"
+      android:layout_marginBottom="20dp"
+      android:text="Joined us before?"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/buttonSignUp"
+      app:layout_constraintVertical_bias="0.687" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
